@@ -23,5 +23,11 @@ public class Main {
         System.out.println(hashTable.size());
         System.out.println(hashTable.isEmpty());
 
+        //Implementation of an ArrayList
+        ArrayList<String> arrayList = new ArrayList();
+        arrayList.add("Array ");
+        arrayList.add("List ");
+        arrayList.add("Implementation");
+        System.out.println("Check " + arrayList.get(1));
     }
 }
