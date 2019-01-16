@@ -1,3 +1,5 @@
+package ArraysStrings;
+
 import java.util.Arrays;
 
 public class ArrayList<E> {

@@ -1,9 +1,11 @@
+package ArraysStrings;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
 /**
- * Implementation of a StringBuilder
+ * Implementation of a ArraysStrings.StringBuilder
  * - Use a char array would result in better performance and efficiency
  * - Use List<Character> is very inefficient, a char only costs 2 bytes, while a Character can take up to 16 bytes as
  * an Object

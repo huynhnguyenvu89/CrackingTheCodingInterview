@@ -1,3 +1,5 @@
+package ArraysStrings;
+
 public class ArrayStringCheckPermutation {
 
     public boolean checkPermutation(String s, String t){

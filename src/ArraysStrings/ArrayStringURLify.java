@@ -1,3 +1,5 @@
+package ArraysStrings;
+
 public class ArrayStringURLify {
 
     public static String urlify(String input) {

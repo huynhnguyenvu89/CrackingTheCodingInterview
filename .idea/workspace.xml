@@ -2,17 +2,30 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="44725341-eb78-437a-91c6-2fa24aec793a" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/ArrayStringCheckPermutation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ArrayStringURLify.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ArraysStrings/ArrayStringOneAway.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ArraysStrings/ArrayStringPalindromePermutation.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Cracking the Coding Interview/ArrayList.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Cracking the Coding Interview/ArrayList.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Cracking the Coding Interview/HashTable$HashNode.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Cracking the Coding Interview/HashTable$HashNode.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Cracking the Coding Interview/HashTable.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Cracking the Coding Interview/HashTable.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Cracking the Coding Interview/ArrayList.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Cracking the Coding Interview/ArrayStringCheckPermutation.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Cracking the Coding Interview/ArrayStringIsUnique.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Cracking the Coding Interview/ArrayStringURLify.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Cracking the Coding Interview/HashTable$HashNode.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Cracking the Coding Interview/HashTable.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Cracking the Coding Interview/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Cracking the Coding Interview/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ArrayList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ArrayList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ArrayStringIsUnique.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ArrayStringIsUnique.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/HashTable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/HashTable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Cracking the Coding Interview/StringBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Cracking the Coding Interview/Temp$ArrayList.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Cracking the Coding Interview/Temp$HashTable$HashNode.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Cracking the Coding Interview/Temp$HashTable.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Cracking the Coding Interview/Temp$StringBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Cracking the Coding Interview/Temp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ArrayList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ArraysStrings/ArrayList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ArrayStringCheckPermutation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ArraysStrings/ArrayStringCheckPermutation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ArrayStringIsUnique.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ArraysStrings/ArrayStringIsUnique.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ArrayStringURLify.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ArraysStrings/ArrayStringURLify.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/HashTable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ArraysStrings/HashTable.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/StringBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ArraysStrings/StringBuilder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Temp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Revision.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -24,60 +37,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="62" selection-start-line="5" selection-start-column="62" selection-end-line="5" selection-end-column="62" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ArrayList.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ArrayList.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="145">
-              <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Temp.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Temp.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="465">
-              <caret line="270" column="5" lean-forward="true" selection-start-line="270" selection-start-column="5" selection-end-line="270" selection-end-column="5" />
+            <state relative-caret-position="187">
+              <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#362#363#0" expanded="true" />
-                <element signature="e#397#398#0" expanded="true" />
-                <element signature="e#440#441#0" expanded="true" />
-                <element signature="e#481#482#0" expanded="true" />
-                <element signature="e#522#523#0" expanded="true" />
-                <element signature="e#558#559#0" expanded="true" />
-                <element signature="e#3005#3006#0" expanded="true" />
-                <element signature="e#3047#3048#0" expanded="true" />
-                <element signature="e#4318#4319#0" expanded="true" />
-                <element signature="e#4385#4386#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ArrayStringURLify.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ArrayStringURLify.java">
+      <file leaf-file-name="ArrayStringOneAway.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/ArraysStrings/ArrayStringOneAway.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="30" selection-start-column="13" selection-end-column="30" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="HashTable.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/HashTable.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1683">
-              <caret line="99" column="20" lean-forward="true" selection-start-line="99" selection-start-column="20" selection-end-line="99" selection-end-column="20" />
+            <state relative-caret-position="136">
+              <caret line="23" column="40" lean-forward="true" selection-start-line="23" selection-start-column="40" selection-end-line="23" selection-end-column="40" />
             </state>
           </provider>
         </entry>
@@ -111,7 +87,9 @@
         <option value="$PROJECT_DIR$/src/ArrayList.java" />
         <option value="$PROJECT_DIR$/src/Temp.java" />
         <option value="$PROJECT_DIR$/src/ArrayStringURLify.java" />
+        <option value="$PROJECT_DIR$/src/ArrayStringPalindromePermutation.java" />
         <option value="$PROJECT_DIR$/src/Main.java" />
+        <option value="$PROJECT_DIR$/src/ArraysStrings/ArrayStringOneAway.java" />
       </list>
     </option>
   </component>
@@ -139,6 +117,12 @@
               <item name="Cracking the Coding Interview" type="b2602c69:ProjectViewProjectNode" />
               <item name="Cracking the Coding Interview" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Cracking the Coding Interview" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Cracking the Coding Interview" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="ArraysStrings" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -199,20 +183,20 @@
       <window_info anchor="right" id="Capture Analysis" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.34687155" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3358946" />
       <window_info anchor="bottom" id="Version Control" />
       <window_info anchor="bottom" id="Terminal" />
       <window_info id="Capture Tool" />
       <window_info id="Designer" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23809524" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23809524" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32930845" />
       <window_info id="Learn" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" />
       <window_info anchor="right" id="Theme Preview" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.2766191" />
       <window_info id="Favorites" side_tool="true" />
-      <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -223,6 +207,11 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="1" />
+    </breakpoint-manager>
+  </component>
   <component name="editorHistoryManager">
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_171/src.zip!/java/lang/String.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -231,75 +220,79 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ArrayStringCheckPermutation.java">
+    <entry file="file://$PROJECT_DIR$/src/Revision.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="35" lean-forward="true" selection-start-line="8" selection-start-column="35" selection-end-line="8" selection-end-column="35" />
+        <state relative-caret-position="37">
+          <caret line="248" lean-forward="true" selection-start-line="248" selection-end-line="248" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ArrayStringIsUnique.java">
+    <entry file="file://$PROJECT_DIR$/src/ArraysStrings/ArrayStringCheckPermutation.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
-          <caret line="2" column="51" lean-forward="true" selection-start-line="2" selection-start-column="51" selection-end-line="2" selection-end-column="51" />
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/StringBuilder.java">
+    <entry file="file://$PROJECT_DIR$/src/ArraysStrings/ArrayStringIsUnique.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="39" column="9" lean-forward="true" selection-start-line="39" selection-start-column="9" selection-end-line="39" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="102">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/HashTable.java">
+    <entry file="file://$PROJECT_DIR$/src/ArraysStrings/ArrayStringPalindromePermutation.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1683">
-          <caret line="99" column="20" lean-forward="true" selection-start-line="99" selection-start-column="20" selection-end-line="99" selection-end-column="20" />
+        <state relative-caret-position="187">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ArrayList.java">
+    <entry file="file://$PROJECT_DIR$/src/ArraysStrings/ArrayStringURLify.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="145">
-          <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
+        <state relative-caret-position="34">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ArrayStringURLify.java">
+    <entry file="file://$PROJECT_DIR$/src/ArraysStrings/HashTable.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="30" selection-start-column="13" selection-end-column="30" />
+        <state relative-caret-position="68">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Temp.java">
+    <entry file="file://$PROJECT_DIR$/src/ArraysStrings/StringBuilder.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="270" column="5" lean-forward="true" selection-start-line="270" selection-start-column="5" selection-end-line="270" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#362#363#0" expanded="true" />
-            <element signature="e#397#398#0" expanded="true" />
-            <element signature="e#440#441#0" expanded="true" />
-            <element signature="e#481#482#0" expanded="true" />
-            <element signature="e#522#523#0" expanded="true" />
-            <element signature="e#558#559#0" expanded="true" />
-            <element signature="e#3005#3006#0" expanded="true" />
-            <element signature="e#3047#3048#0" expanded="true" />
-            <element signature="e#4318#4319#0" expanded="true" />
-            <element signature="e#4385#4386#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="-38">
+          <caret line="3" column="24" lean-forward="true" selection-start-line="3" selection-start-column="24" selection-end-line="3" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ArraysStrings/ArrayList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="62" selection-start-line="5" selection-start-column="62" selection-end-line="5" selection-end-column="62" />
+        <state relative-caret-position="187">
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ArraysStrings/ArrayStringOneAway.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="23" column="40" lean-forward="true" selection-start-line="23" selection-start-column="40" selection-end-line="23" selection-end-column="40" />
         </state>
       </provider>
     </entry>
