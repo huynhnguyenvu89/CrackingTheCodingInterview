@@ -1,6 +1,10 @@
 public class Main {
 
     public static void main(String[] args) {
+
+        System.out.println("Check URLify: " + ArrayStringURLify.urlify("I am a God"));
+        System.out.println("Check URLify: " + ArrayStringURLify.urlify("Say my name ! ! ! "));
+
         //Implementation of StringBuilder
         StringBuilder stringBuilder = new StringBuilder("Hello world! \n");
         stringBuilder.append("This is a ");
@@ -26,8 +30,13 @@ public class Main {
         //Implementation of an ArrayList
         ArrayList<String> arrayList = new ArrayList();
         arrayList.add("Array ");
-        arrayList.add("List ");
+        arrayList.add(0, "List ");
         arrayList.add("Implementation");
-        System.out.println("Check " + arrayList.get(1));
+        System.out.println("ArrayList " + arrayList.get(1) + " " + arrayList.size());
+
+        //String permutation
+        ArrayStringCheckPermutation permutation = new ArrayStringCheckPermutation();
+        permutation.checkPermutation("this is a string", "thi sis astri ng");
+
     }
 }
