@@ -2,8 +2,37 @@ import ArraysStrings.*;
 import ArraysStrings.StringBuilder;
 
 public class Main {
-
     public static void main(String[] args) {
+        System.out.println("ArrayStringStringRotation " + ArrayStringStringRotation.isRotation("waterbottle", "erbottlewat"));
+
+        int[][] matrix2 = new int[][]{
+                {111, 112, 0, 114, 115, 116, 117},
+                {221, 222, 223, 224, 0, 226, 227},
+                {331, 332, 333, 334, 335, 0, 337},
+                {441, 442, 443, 444, 445, 446, 447},
+                {551, 552, 553, 554, 0, 556, 557},
+                {661, 662, 663, 664, 665, 666, 667},
+                {0, 772, 773, 774, 775, 776, 777},
+        };
+        ArrayStringZeroMatrix.zeroMatrix(matrix2);
+
+        int[][] matrix = new int[][]{
+                {111, 112, 113, 114, 115, 116, 117},
+                {221, 222, 223, 224, 225, 226, 227},
+                {331, 332, 333, 334, 335, 336, 337},
+                {441, 442, 443, 444, 445, 446, 447},
+                {551, 552, 553, 554, 555, 556, 557},
+                {661, 662, 663, 664, 665, 666, 667},
+                {771, 772, 773, 774, 775, 776, 777},
+        };
+
+
+        ArrayStringRotateMatrix.printMatrix(matrix);
+        matrix = ArrayStringRotateMatrix.rotate(matrix);
+        ArrayStringRotateMatrix.printMatrix(matrix);
+
+        System.out.println("ArrayStringCompression " + ArrayStringCompression.compress("aabcccccaaa"));
+
         ArrayStringOneAway oneAway = new ArrayStringOneAway();
         System.out.println("One edit away " + oneAway.oneEditAway("pale,", "ple"));
         System.out.println("One edit away " + oneAway.oneEditAway("pales,", "pale"));
