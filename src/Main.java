@@ -24,6 +24,7 @@ public class Main {
         LinkedListTest linkedListTest = new LinkedListTest();
         linkedListTest.testLinkedList(false);
         linkedListTest.testRemoveDuplicate(false);
-        linkedListTest.testReturnKthToLast(true);
+        linkedListTest.testReturnKthToLast(false);
+        linkedListTest.testDeleteMiddleNode(true);
     }
 }

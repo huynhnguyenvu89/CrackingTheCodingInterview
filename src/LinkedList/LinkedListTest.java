@@ -24,6 +24,29 @@ public class LinkedListTest {
         return linkedList;
     }
 
+    private LinkedList getOddTestLinkedList(){
+
+        LinkedList linkedList = new LinkedList<Integer>();
+        linkedList.add(0);
+        linkedList.add(1);
+        linkedList.add(2);
+        linkedList.add(3);
+        linkedList.add(4);
+        return linkedList;
+    }
+
+    private LinkedList getEvenTestLinkedList(){
+
+        LinkedList linkedList = new LinkedList<Integer>();
+        linkedList.add(0);
+        linkedList.add(1);
+        linkedList.add(2);
+        linkedList.add(3);
+        linkedList.add(4);
+        linkedList.add(0);
+        return linkedList;
+    }
+
     public  void testLinkedList(boolean active){
         if (!active)
             return;
@@ -37,6 +60,14 @@ public class LinkedListTest {
         linkedList.remove(5);
         linkedList.remove(1);
         linkedList.print();
+    }
+
+    private LinkedList getSmalTestLinkedList(){
+
+        LinkedList linkedList = new LinkedList<Integer>();
+        linkedList.add(0);
+        linkedList.add(1);
+        return linkedList;
     }
 
     public void testRemoveDuplicate(boolean active){
@@ -61,5 +92,25 @@ public class LinkedListTest {
         System.out.println("Return 5 To Last " + linkedList.returnKthToLast(5));
         System.out.println("Return 9 To Last " + linkedList.returnKthToLast(9));
         System.out.println("Return 100 To Last " + linkedList.returnKthToLast(100));
+    }
+
+    public void testDeleteMiddleNode(boolean active) {
+        if (!active)
+            return;
+
+        LinkedList evenLinkedList = getEvenTestLinkedList();
+        evenLinkedList.print();
+        evenLinkedList.deleteMiddleNode();
+        evenLinkedList.print();
+
+        LinkedList oddLinkedList = getOddTestLinkedList();
+        oddLinkedList.print();
+        oddLinkedList.deleteMiddleNode();
+        oddLinkedList.print();
+
+        LinkedList smallLinkedList = getSmalTestLinkedList();
+        smallLinkedList.print();
+        smallLinkedList.deleteMiddleNode();
+        smallLinkedList.print();
     }
 }

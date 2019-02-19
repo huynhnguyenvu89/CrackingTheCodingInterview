@@ -59,14 +59,13 @@ public class LinkedList<T> {
 
     public void print() {
         if (head != null) {
-            System.out.println("*** Linked list print starts ***");
+            System.out.print("*** Linked list print: ");
             Node node = head;
             while (node.next != null) {
-                System.out.println("" + node.data);
+                System.out.print("" + node.data + " -> ");
                 node = node.next;
             }
             System.out.println("" + node.data);
-            System.out.println("*** Linked list print ends ***");
         }
     }
 
@@ -142,5 +141,34 @@ public class LinkedList<T> {
         } else {
             return null;
         }
+    }
+
+    /**
+     * Implement an algorithm to delete a node in the middle (i.e., any node but the first and last node,
+     * not necessarily the exact middle) if a singly linked list
+     */
+    public void deleteMiddleNode(){
+        Node fastNode = head;
+        Node slowNode = null;
+        int buff = 0;
+
+        while (fastNode.next != null) {
+            if (buff == 0) {
+                buff += 1;
+            } else {
+                buff = 0;
+                if (slowNode == null) {
+                    slowNode = head;
+                } else {
+                    slowNode = slowNode.next;
+                }
+            }
+
+            fastNode = fastNode.next;
+        }
+        if (slowNode == null)
+            return;
+
+        slowNode.next = slowNode.next.next;
     }
 }
