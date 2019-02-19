@@ -70,18 +70,6 @@ public class LinkedList<T> {
         }
     }
 
-    public void print(Node head) {
-        System.out.println("*** Linked list print test node starts ***");
-        if (head != null) {
-            Node node = head;
-            while (node.next != null) {
-                System.out.println("" + node.data);
-                node = node.next;
-            }
-            System.out.println("" + node.data);
-            System.out.println("*** Linked list print test node ends ***");
-        }
-    }
     /**
      * Remove the subsequent duplicates in a given unsorted LinkedList. For example:
      * In:      1 -> 1 -> 5 -> 3 -> 5 -> 5 -> 2 -> 9 -> 3
@@ -110,8 +98,6 @@ public class LinkedList<T> {
                     current.next = newNode;
                     current = newNode;
                 }
-            } else {
-                System.out.println("Found duplicate " + node.data);
             }
             node = node.next;
         }
@@ -120,5 +106,41 @@ public class LinkedList<T> {
             current.next = newNode;
         }
         head = newHead;
+    }
+
+    /**
+     * Returns the Kth node to last in Linked List,
+     * If given K is larger then Linked List size, then return null
+     *
+     * @param k
+     * @return
+     */
+    public T returnKthToLast(int k){
+        Node headNode = head;
+
+        int kPtr = 0;
+        Node kNode = null;
+
+        while (headNode.next != null){
+            if (k == 0) {
+                kNode = headNode;
+            } else if (kPtr == k) {
+                if (kNode == null) {
+                    kNode = head;
+                } else {
+                    kNode = kNode.next;
+                }
+            } else {
+                kPtr += 1;
+            }
+            headNode= headNode.next;
+        }
+
+        if (kNode != null){
+            kNode = kNode.next;
+            return kNode.data;
+        } else {
+            return null;
+        }
     }
 }

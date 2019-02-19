@@ -1,15 +1,10 @@
 package LinkedList;
 
 public class LinkedListTest {
-    private boolean validate;
 
-    public LinkedListTest(boolean validate){
-        this.validate = validate;
-    }
+    public LinkedListTest(){ }
 
     private LinkedList getTestLinkedList(){
-        if (!validate)
-            return null;
 
         LinkedList linkedList = new LinkedList<Integer>();
         linkedList.add(0);
@@ -30,7 +25,7 @@ public class LinkedListTest {
     }
 
     public  void testLinkedList(boolean active){
-        if (!validate || !active)
+        if (!active)
             return;
 
         //Test add() method
@@ -45,12 +40,26 @@ public class LinkedListTest {
     }
 
     public void testRemoveDuplicate(boolean active){
-        if (!validate || !active)
+        if (!active)
             return;
 
         LinkedList linkedList = getTestLinkedList();
         linkedList.print();
         linkedList.removeSubsequentDuplicates();
         linkedList.print();
+    }
+
+    public void testReturnKthToLast(boolean active) {
+        if (!active)
+            return;
+
+        LinkedList linkedList = getTestLinkedList();
+        linkedList.print();
+
+        System.out.println("Return 0 To Last " + linkedList.returnKthToLast(0));
+        System.out.println("Return 1 To Last " + linkedList.returnKthToLast(1));
+        System.out.println("Return 5 To Last " + linkedList.returnKthToLast(5));
+        System.out.println("Return 9 To Last " + linkedList.returnKthToLast(9));
+        System.out.println("Return 100 To Last " + linkedList.returnKthToLast(100));
     }
 }

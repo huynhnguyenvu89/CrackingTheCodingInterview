@@ -2,38 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6a9f966a-c23d-4792-9f21-eb05f1da1575" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/ArraysStrings/ArraysStringsTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/description.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Cracking the Coding Interview/ArraysStrings/ArrayList.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Cracking the Coding Interview/ArraysStrings/ArrayStringCheckPermutation.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Cracking the Coding Interview/ArraysStrings/ArrayStringCompression.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Cracking the Coding Interview/ArraysStrings/ArrayStringIsUnique.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Cracking the Coding Interview/ArraysStrings/ArrayStringOneAway.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Cracking the Coding Interview/ArraysStrings/ArrayStringPalindromePermutation.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Cracking the Coding Interview/ArraysStrings/ArrayStringRotateMatrix.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Cracking the Coding Interview/ArraysStrings/ArrayStringStringRotation.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Cracking the Coding Interview/ArraysStrings/ArrayStringURLify.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Cracking the Coding Interview/ArraysStrings/ArrayStringZeroMatrix.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Cracking the Coding Interview/ArraysStrings/HashTable$HashNode.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Cracking the Coding Interview/ArraysStrings/HashTable.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Cracking the Coding Interview/ArraysStrings/StringBuilder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Cracking the Coding Interview/LinkedList/LinkedList$Node.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Cracking the Coding Interview/LinkedList/LinkedList.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Cracking the Coding Interview/LinkedList/LinkedListTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Cracking the Coding Interview/LinkedList/RemoveDuplicate.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Cracking the Coding Interview/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Cracking the Coding Interview/Revision$ArrayList.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Cracking the Coding Interview/Revision$HashTable$HashNode.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Cracking the Coding Interview/Revision$HashTable.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Cracking the Coding Interview/Revision$StringBuilder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Cracking the Coding Interview/Revision.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/LinkedList/LinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LinkedList/LinkedList.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/LinkedList/LinkedListTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LinkedList/LinkedListTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
@@ -51,8 +19,8 @@
       <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="174">
-              <caret line="22" column="42" lean-forward="true" selection-start-line="22" selection-start-column="42" selection-end-line="22" selection-end-column="42" />
+            <state relative-caret-position="360">
+              <caret line="26" column="33" lean-forward="true" selection-start-line="26" selection-start-column="33" selection-end-line="26" selection-end-column="33" />
             </state>
           </provider>
         </entry>
@@ -60,12 +28,8 @@
       <file leaf-file-name="LinkedListTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/LinkedList/LinkedListTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
-              <folding>
-                <element signature="e#130#131#0" expanded="true" />
-                <element signature="e#169#170#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="220">
+              <caret line="61" column="45" lean-forward="true" selection-start-line="61" selection-start-column="45" selection-end-line="61" selection-end-column="45" />
             </state>
           </provider>
         </entry>
@@ -73,8 +37,8 @@
       <file leaf-file-name="LinkedList.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/LinkedList/LinkedList.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="120" column="9" lean-forward="true" selection-start-line="120" selection-start-column="9" selection-end-line="120" selection-end-column="9" />
+            <state relative-caret-position="310">
+              <caret line="133" column="9" lean-forward="true" selection-start-line="133" selection-start-column="9" selection-end-line="133" selection-end-column="9" />
             </state>
           </provider>
         </entry>
@@ -107,8 +71,8 @@
       <list>
         <option value="$PROJECT_DIR$/src/ArraysStrings/ArraysStringsTest.java" />
         <option value="$PROJECT_DIR$/src/Main.java" />
-        <option value="$PROJECT_DIR$/src/LinkedList/LinkedList.java" />
         <option value="$PROJECT_DIR$/src/LinkedList/LinkedListTest.java" />
+        <option value="$PROJECT_DIR$/src/LinkedList/LinkedList.java" />
       </list>
     </option>
   </component>
@@ -254,7 +218,7 @@
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" />
       <window_info anchor="bottom" id="Version Control" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.5271226" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.5259434" />
       <window_info anchor="bottom" id="Terminal" weight="0.32900944" />
       <window_info id="Capture Tool" />
       <window_info id="Designer" />
@@ -290,26 +254,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="174">
-          <caret line="22" column="42" lean-forward="true" selection-start-line="22" selection-start-column="42" selection-end-line="22" selection-end-column="42" />
+        <state relative-caret-position="360">
+          <caret line="26" column="33" lean-forward="true" selection-start-line="26" selection-start-column="33" selection-end-line="26" selection-end-column="33" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/LinkedList/LinkedListTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
-          <folding>
-            <element signature="e#130#131#0" expanded="true" />
-            <element signature="e#169#170#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="220">
+          <caret line="61" column="45" lean-forward="true" selection-start-line="61" selection-start-column="45" selection-end-line="61" selection-end-column="45" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/LinkedList/LinkedList.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="120" column="9" lean-forward="true" selection-start-line="120" selection-start-column="9" selection-end-line="120" selection-end-column="9" />
+        <state relative-caret-position="310">
+          <caret line="133" column="9" lean-forward="true" selection-start-line="133" selection-start-column="9" selection-end-line="133" selection-end-column="9" />
         </state>
       </provider>
     </entry>

@@ -21,8 +21,9 @@ public class Main {
 
 
 //        LinkedListTest.testLinkedList();
-        LinkedListTest linkedListTest = new LinkedListTest(true);
+        LinkedListTest linkedListTest = new LinkedListTest();
         linkedListTest.testLinkedList(false);
-        linkedListTest.testRemoveDuplicate(true);
+        linkedListTest.testRemoveDuplicate(false);
+        linkedListTest.testReturnKthToLast(true);
     }
 }
