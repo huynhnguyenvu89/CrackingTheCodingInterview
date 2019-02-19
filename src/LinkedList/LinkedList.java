@@ -1,7 +1,11 @@
 package LinkedList;
 
+import java.util.HashMap;
+
 public class LinkedList<T> {
     private Node head;
+
+    public LinkedList(){ }
 
     public LinkedList(T data) {
         head = new Node(data);
@@ -9,8 +13,12 @@ public class LinkedList<T> {
     }
 
     public void add(T data) {
-        if (head == null || data == null)
+        if (data == null)
             return;
+        if (head == null) {
+            head = new Node(data);
+            return;
+        }
         Node node = head;
         Node newNode = new Node(data);
         while (node.next != null)
@@ -57,8 +65,53 @@ public class LinkedList<T> {
                 System.out.println("" + node.data);
                 node = node.next;
             }
-            System.out.println("" + node.data);
+            System.out.println("Last " + node.data);
             System.out.println("*** Linked list print ends ***");
         }
+    }
+
+    public void print(Node head) {
+        System.out.println("*** Linked list print test node starts ***");
+        if (head != null) {
+            Node node = head;
+            while (node.next != null) {
+                System.out.println("" + node.data);
+                node = node.next;
+            }
+            System.out.println("" + node.data);
+            System.out.println("*** Linked list print test node ends ***");
+        }
+    }
+    /**
+     * Remove the subsequent duplicates in a given unsorted LinkedList. For example:
+     * In:      1 -> 1 -> 5 -> 3 -> 5 -> 5 -> 2 -> 9 -> 3
+     * Out:     1 -> 5 -> 3 -> 2 -> 9
+     *
+     */
+    public void removeSubsequentDuplicates(){
+        if (head == null)
+            throw new IllegalArgumentException("Input must not be null");
+        //If only 1 element found, no need to check for duplicate
+        if (head.next == null)
+            return;
+        HashMap hashMap = new HashMap<T, Boolean>();
+        Node fastNode = head;
+        Node slowNode = null;
+        while (fastNode.next != null) {
+            if (!hashMap.containsKey(fastNode.data)) {
+                hashMap.put(fastNode.data, true);
+                if (slowNode == null)
+                    slowNode = fastNode;
+                else
+                    slowNode.next = fastNode;
+            } else {
+                System.out.println("*** Found duplicate " + fastNode.data);
+            }
+            fastNode = fastNode.next;
+        }
+        if (!hashMap.containsKey(fastNode.data)){
+            slowNode.next = fastNode;
+        }
+        print(slowNode);
     }
 }

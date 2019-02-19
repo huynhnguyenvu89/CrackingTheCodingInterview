@@ -1,6 +1,6 @@
 import ArraysStrings.*;
 import ArraysStrings.StringBuilder;
-import LinkedList.LinkedList;
+import LinkedList.LinkedListTest;
 
 public class Main {
     public static void main(String[] args) {
@@ -88,26 +88,7 @@ public class Main {
         ArrayStringCheckPermutation permutation = new ArrayStringCheckPermutation();
         permutation.checkPermutation("this is a string", "thi sis astri ng");
 
-        testLinkedList();
-    }
-
-    private static void testLinkedList(){
-        LinkedList linkedList = new LinkedList<Integer>(0);
-        linkedList.add(1);
-        linkedList.add(2);
-        linkedList.add(3);
-        linkedList.add(4);
-        linkedList.add(5);
-        linkedList.add(6);
-        linkedList.add(7);
-        linkedList.add(8);
-        linkedList.add(9);
-
-        linkedList.print();
-        linkedList.remove(9);
-        linkedList.remove(1);
-        linkedList.remove(5);
-        linkedList.remove(1);
-        linkedList.print();
+//        LinkedListTest.testLinkedList();
+        LinkedListTest.testRemoveDuplicate();
     }
 }
