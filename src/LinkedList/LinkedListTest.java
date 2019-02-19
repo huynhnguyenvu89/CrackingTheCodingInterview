@@ -1,8 +1,16 @@
 package LinkedList;
 
 public class LinkedListTest {
+    private boolean validate;
 
-    private static LinkedList getTestLinkedList(){
+    public LinkedListTest(boolean validate){
+        this.validate = validate;
+    }
+
+    private LinkedList getTestLinkedList(){
+        if (!validate)
+            return null;
+
         LinkedList linkedList = new LinkedList<Integer>();
         linkedList.add(0);
         linkedList.add(1);
@@ -18,15 +26,13 @@ public class LinkedListTest {
         linkedList.add(7);
         linkedList.add(8);
         linkedList.add(9);
-        linkedList.add(5);
-        linkedList.add(6);
-        linkedList.add(7);
-        linkedList.add(8);
-        linkedList.add(9);
         return linkedList;
     }
 
-    public static void testLinkedList(){
+    public  void testLinkedList(boolean active){
+        if (!validate || !active)
+            return;
+
         //Test add() method
         LinkedList linkedList = getTestLinkedList();
 
@@ -38,7 +44,10 @@ public class LinkedListTest {
         linkedList.print();
     }
 
-    public static void testRemoveDuplicate(){
+    public void testRemoveDuplicate(boolean active){
+        if (!validate || !active)
+            return;
+
         LinkedList linkedList = getTestLinkedList();
         linkedList.print();
         linkedList.removeSubsequentDuplicates();

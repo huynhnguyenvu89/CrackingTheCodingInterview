@@ -65,7 +65,7 @@ public class LinkedList<T> {
                 System.out.println("" + node.data);
                 node = node.next;
             }
-            System.out.println("Last " + node.data);
+            System.out.println("" + node.data);
             System.out.println("*** Linked list print ends ***");
         }
     }
@@ -95,23 +95,30 @@ public class LinkedList<T> {
         if (head.next == null)
             return;
         HashMap hashMap = new HashMap<T, Boolean>();
-        Node fastNode = head;
-        Node slowNode = null;
-        while (fastNode.next != null) {
-            if (!hashMap.containsKey(fastNode.data)) {
-                hashMap.put(fastNode.data, true);
-                if (slowNode == null)
-                    slowNode = fastNode;
-                else
-                    slowNode.next = fastNode;
+        Node node = head;
+        Node newHead = null;
+        Node current = null;
+
+        while (node.next != null) {
+            if (!hashMap.containsKey(node.data)) {
+                hashMap.put(node.data, true);
+                if (newHead == null) {
+                    newHead = new Node(node.data);
+                    current = newHead;
+                } else {
+                    Node newNode = new Node(node.data);
+                    current.next = newNode;
+                    current = newNode;
+                }
             } else {
-                System.out.println("*** Found duplicate " + fastNode.data);
+                System.out.println("Found duplicate " + node.data);
             }
-            fastNode = fastNode.next;
+            node = node.next;
         }
-        if (!hashMap.containsKey(fastNode.data)){
-            slowNode.next = fastNode;
+        if (!hashMap.containsKey(node.data)){
+            Node newNode = new Node(node.data);
+            current.next = newNode;
         }
-        print(slowNode);
+        head = newHead;
     }
 }
