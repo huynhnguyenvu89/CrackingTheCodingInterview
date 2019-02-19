@@ -25,6 +25,7 @@ public class Main {
         linkedListTest.testLinkedList(false);
         linkedListTest.testRemoveDuplicate(false);
         linkedListTest.testReturnKthToLast(false);
-        linkedListTest.testDeleteMiddleNode(true);
+        linkedListTest.testDeleteMiddleNode(false);
+        linkedListTest.testPartition(true);
     }
 }

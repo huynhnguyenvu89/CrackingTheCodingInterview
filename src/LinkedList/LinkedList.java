@@ -145,7 +145,19 @@ public class LinkedList<T> {
 
     /**
      * Implement an algorithm to delete a node in the middle (i.e., any node but the first and last node,
-     * not necessarily the exact middle) if a singly linked list
+     * not necessarily the exact middle) of a singly linked list
+     *
+     * Example 1:
+     * 0 -> 1 -> 2 -> 3 -> 4 -> 0
+     * 0 -> 1 -> 3 -> 4 -> 0
+     *
+     * Example 2:
+     * 0 -> 1 -> 2 -> 3 -> 4
+     * 0 -> 1 -> 3 -> 4
+     *
+     * Example 3:
+     * 0 -> 1
+     * 0 -> 1
      */
     public void deleteMiddleNode(){
         Node fastNode = head;
@@ -170,5 +182,20 @@ public class LinkedList<T> {
             return;
 
         slowNode.next = slowNode.next.next;
+    }
+
+    /**
+     * Partition a LinkedList around a value x, such that all nodes less than x come before all nodes greater than
+     * or equal to x. If x is contained within the list, the values of x only need to be after the elements less than x.
+     * The partition element x can appear anywhere in the "right partition"; it does not need to appear between the left
+     * and right partition.
+     *
+     * Example:
+     * 3 -> 5 -> 8 -> 5 -> 9 -> 2 -> 1 (partition = 5)
+     * 3 -> 1 -> 2 -> 9 -> 5 -> 5 -> 8
+     * @param x
+     */
+    public void partition(int x){
+
     }
 }

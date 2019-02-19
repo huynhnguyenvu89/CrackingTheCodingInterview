@@ -47,6 +47,25 @@ public class LinkedListTest {
         return linkedList;
     }
 
+    /**
+     *
+     * 3 -> 5 -> 8 -> 5 -> 9 -> 2 -> 1 (partition = 5)
+     * 3 -> 1 -> 2 -> 9 -> 5 -> 5 -> 8
+     * @return
+     */
+    private LinkedList getUnsortedTestLinkedList(){
+
+        LinkedList linkedList = new LinkedList<Integer>();
+        linkedList.add(3);
+        linkedList.add(5);
+        linkedList.add(8);
+        linkedList.add(5);
+        linkedList.add(9);
+        linkedList.add(2);
+        linkedList.add(1);
+        return linkedList;
+    }
+
     public  void testLinkedList(boolean active){
         if (!active)
             return;
@@ -112,5 +131,15 @@ public class LinkedListTest {
         smallLinkedList.print();
         smallLinkedList.deleteMiddleNode();
         smallLinkedList.print();
+    }
+
+    public void testPartition(boolean active) {
+        if (!active)
+            return;
+
+        LinkedList unsortedTestLinkedList = getUnsortedTestLinkedList();
+        unsortedTestLinkedList.print();
+        unsortedTestLinkedList.partition(5);
+        unsortedTestLinkedList.print();
     }
 }
