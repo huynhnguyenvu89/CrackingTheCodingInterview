@@ -29,21 +29,19 @@ public class LinkedList<T> {
     public void remove(T data) {
         if (head == null || data == null)
             return;
-        if (head.data == data)
-            head = head.next;
 
         Node node = head;
         Node prev = null;
-        while (node.next != null) {
-            prev = node;
-            if (node.next.data == data) {
-                node.next = node.next.next;
-                break;
+        while (node != null) {
+            if (node.data == data) {
+                if (prev == null){
+                    head = node.next;
+                } else {
+                    prev.next = node.next;
+                }
             }
+            prev = node;
             node = node.next;
-        }
-        if (node.data == data) {
-            prev.next = null;
         }
     }
 
@@ -59,7 +57,7 @@ public class LinkedList<T> {
 
     public void print() {
         if (head != null) {
-            System.out.print("*** Linked list print: ");
+            System.out.print("***>> ");
             Node node = head;
             while (node.next != null) {
                 System.out.print("" + node.data + " -> ");
@@ -86,7 +84,7 @@ public class LinkedList<T> {
         Node newHead = null;
         Node current = null;
 
-        while (node.next != null) {
+        while (node != null) {
             if (!hashMap.containsKey(node.data)) {
                 hashMap.put(node.data, true);
                 if (newHead == null) {
@@ -99,10 +97,6 @@ public class LinkedList<T> {
                 }
             }
             node = node.next;
-        }
-        if (!hashMap.containsKey(node.data)){
-            Node newNode = new Node(node.data);
-            current.next = newNode;
         }
         head = newHead;
     }
@@ -120,7 +114,7 @@ public class LinkedList<T> {
         int kPtr = 0;
         Node kNode = null;
 
-        while (headNode.next != null){
+        while (headNode != null){
             if (k == 0) {
                 kNode = headNode;
             } else if (kPtr == k) {
@@ -136,7 +130,6 @@ public class LinkedList<T> {
         }
 
         if (kNode != null){
-            kNode = kNode.next;
             return kNode.data;
         } else {
             return null;
@@ -162,13 +155,13 @@ public class LinkedList<T> {
     public void deleteMiddleNode(){
         Node fastNode = head;
         Node slowNode = null;
-        int buff = 0;
+        int counter = 0;
 
         while (fastNode.next != null) {
-            if (buff == 0) {
-                buff += 1;
+            if (counter == 0) {
+                counter = 1;
             } else {
-                buff = 0;
+                counter = 0;
                 if (slowNode == null) {
                     slowNode = head;
                 } else {
@@ -186,16 +179,47 @@ public class LinkedList<T> {
 
     /**
      * Partition a LinkedList around a value x, such that all nodes less than x come before all nodes greater than
-     * or equal to x. If x is contained within the list, the values of x only need to be after the elements less than x.
-     * The partition element x can appear anywhere in the "right partition"; it does not need to appear between the left
-     * and right partition.
+     * or equal to x. If x is contained within the list, the values of x need to be after the elements less than x.
      *
      * Example:
-     * 3 -> 5 -> 8 -> 5 -> 9 -> 2 -> 1 (partition = 5)
-     * 3 -> 1 -> 2 -> 9 -> 5 -> 5 -> 8
+     * 2 -> 3 -> 5 -> 8 -> 5 -> 9 -> 2 -> 1 -> 1 (partition = 5)
+     * 1 -> 1 -> 2 -> 3 -> 2 -> 5 -> 8 -> 5 -> 9
      * @param x
      */
     public void partition(int x){
+        Node curr = head;
+        Node tail = head;
 
+        while (curr != null) {
+            //Save curr.next to assign to curr later, avoid infinite loop.
+            Node next = curr.next;
+            if ((Integer) curr.data < x) {
+                //Put curr Node to head position, update head
+                curr.next = head;
+                head = curr;
+            } else {
+                //Put curr Node to tail position, update tail
+                tail.next = curr;
+                tail = curr;
+            }
+            curr = next;
+        }
+        tail.next = null;
+
+    }
+
+    /**
+     * Reverse all elements in a Linked List.
+     */
+    public void reverseLinkedList(){
+        Node curr = head;
+        Node tail = head;
+        while (curr != null) {
+            Node next = curr.next;
+            curr.next = head;
+            head = curr;
+            curr = next;
+        }
+        tail.next = null;
     }
 }

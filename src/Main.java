@@ -1,31 +1,15 @@
-import ArraysStrings.*;
-import ArraysStrings.StringBuilder;
-import LinkedList.LinkedListTest;
+import test.ArraysStringsTest;
+import test.LinkedListTest;
 
 public class Main {
     public static void main(String[] args) {
 
-        //ArrayString test suite
+        //Run ArrayString test suite
         ArraysStringsTest arraysStringsTest = new ArraysStringsTest(false);
-        arraysStringsTest.testIsRotation();
-        arraysStringsTest.testZeroMatrix();
-        arraysStringsTest.testRotateMatrix();
-        arraysStringsTest.testArrayStringCompression();
-        arraysStringsTest.testArrayStringOneAway();
-        arraysStringsTest.testArrayStringPalindromePermutation();
-        arraysStringsTest.testArrayStringURLify();
-        arraysStringsTest.testStringBuilder();
-        arraysStringsTest.testHashTable();
-        arraysStringsTest.testArrayList();
-        arraysStringsTest.testArrayStringCheckPermutation();
+        arraysStringsTest.runTestSuite(false);
 
-
-//        LinkedListTest.testLinkedList();
+        //Run LinkedList tests suite
         LinkedListTest linkedListTest = new LinkedListTest();
-        linkedListTest.testLinkedList(false);
-        linkedListTest.testRemoveDuplicate(false);
-        linkedListTest.testReturnKthToLast(false);
-        linkedListTest.testDeleteMiddleNode(false);
-        linkedListTest.testPartition(true);
+        linkedListTest.runTestSuite(true);
     }
 }

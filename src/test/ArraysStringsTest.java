@@ -1,4 +1,8 @@
-package ArraysStrings;
+package test;
+
+import ArraysStrings.*;
+
+import java.lang.StringBuilder;
 
 public class ArraysStringsTest {
 
@@ -7,6 +11,23 @@ public class ArraysStringsTest {
 
     public ArraysStringsTest(boolean validate) {
         this.validate = validate;
+    }
+
+    public void runTestSuite(boolean active){
+        if (!active)
+            return;
+
+        testIsRotation();
+        testZeroMatrix();
+        testRotateMatrix();
+        testArrayStringCompression();
+        testArrayStringOneAway();
+        testArrayStringPalindromePermutation();
+        testArrayStringURLify();
+        testStringBuilder();
+        testHashTable();
+        testArrayList();
+        testArrayStringCheckPermutation();
     }
 
     public void testIsRotation(){
@@ -97,7 +118,7 @@ public class ArraysStringsTest {
             return;
 
         //Implementation of ArraysStrings.StringBuilder
-        StringBuilder stringBuilder = new StringBuilder("Hello world! \n");
+        ArraysStrings.StringBuilder stringBuilder = new ArraysStrings.StringBuilder("Hello world! \n");
         stringBuilder.append("This is a ");
         stringBuilder.append("ArraysStrings.StringBuilder implementation in Java");
         System.out.println(stringBuilder.toString());
