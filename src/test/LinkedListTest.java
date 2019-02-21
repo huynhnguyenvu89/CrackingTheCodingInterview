@@ -15,10 +15,13 @@ public class LinkedListTest {
         testReturnKthToLast(false);
         testDeleteMiddleNode(false);
         testPartition(false);
-        testReverseLinkedList(true);
+        testReverseLinkedList(false);
+        testSumLists(false);
+        testPalindromeLinkedList(false);
+        testIntersectionLinkedList(true);
     }
 
-    public  void testLinkedList(boolean active){
+    private void testLinkedList(boolean active){
         if (!active)
             return;
 
@@ -45,22 +48,7 @@ public class LinkedListTest {
         linkedList.print();
     }
 
-    private LinkedList getSmalTestLinkedList(){
-
-        LinkedList linkedList = new LinkedList<Integer>();
-        linkedList.add(0);
-        linkedList.add(1);
-        return linkedList;
-    }
-
-    private LinkedList getOneElementTestLinkedList(){
-
-        LinkedList linkedList = new LinkedList<Integer>();
-        linkedList.add(1);
-        return linkedList;
-    }
-
-    public void testRemoveDuplicate(boolean active){
+    private void testRemoveDuplicate(boolean active){
         if (!active)
             return;
         System.out.println("\nTestRemoveDuplicate");
@@ -70,7 +58,7 @@ public class LinkedListTest {
         linkedList.print();
     }
 
-    public void testReturnKthToLast(boolean active) {
+    private void testReturnKthToLast(boolean active) {
         if (!active)
             return;
 
@@ -85,7 +73,7 @@ public class LinkedListTest {
         System.out.println("Return 100 To Last " + linkedList.returnKthToLast(100));
     }
 
-    public void testDeleteMiddleNode(boolean active) {
+    private void testDeleteMiddleNode(boolean active) {
         if (!active)
             return;
 
@@ -103,7 +91,7 @@ public class LinkedListTest {
         oddLinkedList.print();
 
         System.out.println("2 elements Linked List");
-        LinkedList smallLinkedList = getSmalTestLinkedList();
+        LinkedList smallLinkedList = getSmallTestLinkedList();
         smallLinkedList.print();
         smallLinkedList.deleteMiddleNode();
         smallLinkedList.print();
@@ -115,7 +103,7 @@ public class LinkedListTest {
         oneElementLinkedList.print();
     }
 
-    public void testPartition(boolean active) {
+    private void testPartition(boolean active) {
         if (!active)
             return;
 
@@ -163,6 +151,67 @@ public class LinkedListTest {
         oneElementLinkedList.print();
     }
 
+    private void testSumLists(boolean active) {
+        if (!active)
+            return;
+
+        System.out.println("\nTestSumLists");
+        System.out.println("Test sum 2 equal length Linked Lists, res same length");
+        LinkedList sumLinkedList = new LinkedList();
+        sumLinkedList = sumLinkedList.sumReversedLists(getFirstReversedLinkedList(), getSecondReversedLinkedList());
+        getFirstReversedLinkedList().print();
+        getSecondForwardLinkedList().print();
+        sumLinkedList.print();
+        System.out.println("Test sum 2 equal length Linked Lists, res carry over");
+        LinkedList sumLinkedList1 = new LinkedList();
+        sumLinkedList1 = sumLinkedList1.sumReversedLists(getFirstReversedLinkedList(), getThirdReversedLinkedList());
+        getFirstReversedLinkedList().print();
+        getThirdReversedLinkedList().print();
+        sumLinkedList1.print();
+        System.out.println("Test sum 2 non-equal length Linked Lists,");
+        LinkedList sumLinkedList2 = new LinkedList();
+        sumLinkedList2 = sumLinkedList2.sumReversedLists(getThirdReversedLinkedList(), getFourthReversedLinkedList());
+        getThirdReversedLinkedList().print();
+        getFourthReversedLinkedList().print();
+        sumLinkedList2.print();
+    }
+
+    private void testPalindromeLinkedList(boolean active) {
+        if (!active)
+            return;
+
+        System.out.println("\nTestPalidromeLinkedList");
+
+        LinkedList palindromeLinkedList = getPalindromeLinkedList();
+        palindromeLinkedList.print();
+        System.out.println("PalindromeLinkedList: " + palindromeLinkedList.isPalindrome());
+
+        LinkedList nonPalindromeLinkedList = getTestLinkedList();
+        nonPalindromeLinkedList .print();
+        System.out.println("NonPalindromeLinkedList: " + nonPalindromeLinkedList.isPalindrome());
+
+        LinkedList evenPalindromeLinkedList = getEvenPalindromeLinkedList();
+        evenPalindromeLinkedList.print();
+        System.out.println("EvenPalindromeLinkedList: " + evenPalindromeLinkedList.isPalindrome());
+    }
+
+    private void testIntersectionLinkedList(boolean active) {
+        if (!active)
+            return;
+
+        System.out.println("\nTestIntersectionLinkedList");
+
+        LinkedList[] equalNonIntersectedLinkedList = getEqualNonIntersectedLinkedLists();
+        LinkedList first = equalNonIntersectedLinkedList[0];
+        LinkedList second = equalNonIntersectedLinkedList[1];
+        System.out.println("EqualNonIntersectedLinkedList: " + first.checkIntersection(second));
+
+        LinkedList[] intersectedLinkedList = getIntersectedLinkedLists();
+        LinkedList first1 = equalNonIntersectedLinkedList[0];
+        LinkedList second1 = equalNonIntersectedLinkedList[1];
+        System.out.println("IntersectedLinkedList: " + first1.checkIntersection(first1));
+    }
+
     private LinkedList getTestLinkedList(){
 
         LinkedList linkedList = new LinkedList<Integer>();
@@ -206,12 +255,6 @@ public class LinkedListTest {
         return linkedList;
     }
 
-    /**
-     *
-     * 3 -> 5 -> 8 -> 5 -> 9 -> 2 -> 1 (partition = 5)
-     * 3 -> 1 -> 2 -> 9 -> 5 -> 5 -> 8
-     * @return
-     */
     private LinkedList getUnsortedTestLinkedList(){
 
         LinkedList linkedList = new LinkedList<Integer>();
@@ -225,5 +268,132 @@ public class LinkedListTest {
         linkedList.add(1);
         linkedList.add(1);
         return linkedList;
+    }
+
+    private LinkedList getSmallTestLinkedList(){
+
+        LinkedList linkedList = new LinkedList<Integer>();
+        linkedList.add(0);
+        linkedList.add(1);
+        return linkedList;
+    }
+
+    private LinkedList getOneElementTestLinkedList(){
+
+        LinkedList linkedList = new LinkedList<Integer>();
+        linkedList.add(1);
+        return linkedList;
+    }
+
+    private LinkedList getPalindromeLinkedList(){
+
+        LinkedList linkedList = new LinkedList<Integer>();
+        linkedList.add(1);
+        linkedList.add(3);
+        linkedList.add(9);
+        linkedList.add(3);
+        linkedList.add(1);
+        return linkedList;
+    }
+
+    private LinkedList getEvenPalindromeLinkedList(){
+
+        LinkedList linkedList = new LinkedList<Integer>();
+        linkedList.add(1);
+        linkedList.add(3);
+        linkedList.add(9);
+        linkedList.add(9);
+        linkedList.add(3);
+        linkedList.add(1);
+        return linkedList;
+    }
+
+    private LinkedList getFirstForwardLinkedList(){
+        LinkedList linkedList = new LinkedList<Integer>();
+        linkedList.add(6);
+        linkedList.add(1);
+        linkedList.add(7);
+        return linkedList;
+    }
+
+    private LinkedList getSecondForwardLinkedList(){
+        LinkedList linkedList = new LinkedList<Integer>();
+        linkedList.add(2);
+        linkedList.add(9);
+        linkedList.add(5);
+        return linkedList;
+    }
+
+    private LinkedList getFirstReversedLinkedList(){
+        LinkedList linkedList = new LinkedList<Integer>();
+        linkedList.add(7);
+        linkedList.add(1);
+        linkedList.add(6);
+        return linkedList;
+    }
+
+    private LinkedList getSecondReversedLinkedList(){
+        LinkedList linkedList = new LinkedList<Integer>();
+        linkedList.add(5);
+        linkedList.add(9);
+        linkedList.add(2);
+        return linkedList;
+    }
+
+    private LinkedList getThirdReversedLinkedList(){
+        LinkedList linkedList = new LinkedList<Integer>();
+        linkedList.add(9);
+        linkedList.add(9);
+        linkedList.add(9);
+        return linkedList;
+    }
+
+    private LinkedList getFourthReversedLinkedList(){
+        LinkedList linkedList = new LinkedList<Integer>();
+        linkedList.add(9);
+        linkedList.add(9);
+        linkedList.add(9);
+        linkedList.add(9);
+        return linkedList;
+    }
+
+    private LinkedList[] getEqualNonIntersectedLinkedLists(){
+        LinkedList[] res = new LinkedList[2];
+
+        LinkedList first = new LinkedList<Integer>();
+        first.add(9);
+        first.add(9);
+        first.add(9);
+        first.add(9);
+        res[0] = first;
+
+        LinkedList second = new LinkedList<Integer>();
+        second.add(9);
+        second.add(9);
+        second.add(9);
+        second.add(9);
+        res[1] = second;
+
+        return res;
+    }
+
+    private LinkedList[] getIntersectedLinkedLists(){
+        LinkedList[] res = new LinkedList[2];
+
+        LinkedList first = new LinkedList<Integer>();
+        first.add(9);
+        first.add(9);
+        first.add(9);
+        first.add(9);
+        res[0] = first;
+
+        LinkedList second = new LinkedList<Integer>();
+        second.add(9);
+        second.add(9);
+        second.add(9);
+        second.add(9);
+        res[1] = first;
+
+        return res;
     }
 }

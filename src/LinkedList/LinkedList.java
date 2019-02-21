@@ -7,6 +7,10 @@ public class LinkedList<T> {
 
     public LinkedList(){ }
 
+    public LinkedList(Node head) {
+        this.head = head;
+    }
+
     public LinkedList(T data) {
         head = new Node(data);
         head.next = null;
@@ -45,7 +49,7 @@ public class LinkedList<T> {
         }
     }
 
-    private class Node {
+    private class Node<T> {
         T data;
         Node next;
 
@@ -56,6 +60,18 @@ public class LinkedList<T> {
     }
 
     public void print() {
+        if (head != null) {
+            System.out.print("***>> ");
+            Node node = head;
+            while (node.next != null) {
+                System.out.print("" + node.data + " -> ");
+                node = node.next;
+            }
+            System.out.println("" + node.data);
+        }
+    }
+
+    private void print(Node head) {
         if (head != null) {
             System.out.print("***>> ");
             Node node = head;
@@ -130,7 +146,7 @@ public class LinkedList<T> {
         }
 
         if (kNode != null){
-            return kNode.data;
+            return (T) kNode.data;
         } else {
             return null;
         }
@@ -221,5 +237,127 @@ public class LinkedList<T> {
             curr = next;
         }
         tail.next = null;
+    }
+
+    /**
+     * Sum Lists: You have 2 numbers represented by a LinkedList, where each node contains a single digit.
+     * The digits are stored in reversed order, such that the 1's digit is at the head of the list.
+     * Write a function that adds the two numbers and returns the sum as a LinkedList.
+     *
+     * Example:
+     * Input    (7 -> 1 -> 6) + (5 -> 9 -> 2). That is 617 + 295 = 912
+     * Output   (2 -> 1 -> 9)
+     */
+    public LinkedList sumReversedLists(LinkedList first, LinkedList second){
+        LinkedList res = null;
+        Node resNode = null;
+        Node firstHead = first.head;
+        Node secondHead = second.head;
+        int carryValue =0, firstValue, secondValue;
+
+        while (firstHead != null || secondHead != null) {
+            if (firstHead == null)
+                firstValue = 0;
+            else
+                firstValue = (Integer) firstHead.data;
+            if (secondHead == null)
+                secondValue = 0;
+            else
+                secondValue = (Integer) secondHead.data;
+
+            int sumValue = carryValue + firstValue + secondValue;
+            carryValue = sumValue / 10;
+            int placeValue = sumValue % 10;
+
+            Node<Integer> newNode = new Node(placeValue);
+            if (res == null) {
+                res = new LinkedList();
+                resNode = newNode;
+                res.head = resNode;
+            } else {
+                resNode.next = newNode;
+                resNode = resNode.next;
+            }
+
+            if (firstHead != null) firstHead = firstHead.next;
+            if (secondHead != null) secondHead = secondHead.next;
+        }
+
+        System.out.println("-" + carryValue);
+        if (carryValue > 0) {
+            Node<Integer> resTail = new Node(carryValue);
+            resNode.next = resTail;
+        }
+
+        return res;
+    }
+
+    /**
+     * Follow up: Suppose the digits are stored in forward order. Repeat the problem above.
+     *
+     * Example:
+     * Input    (6 -> 1 -> 7) + (2 -> 9 -> 5). That is 617 + 295 = 912
+     * Output   (9 -> 1 -> 2)
+     * @param first
+     * @param second
+     * @return
+     */
+    public static LinkedList sumForwardLists(LinkedList first, LinkedList second){
+        LinkedList res = new LinkedList();
+        return res;
+    }
+
+    /**
+     * Implement a function to check if a LinkedList is a palindrome.
+     * A palindrome is a sequence that reads the same backward as forward, e.g., madam or nurses run.
+     *
+     * @return true if it's a palindrome, false otherwise.
+     */
+    public boolean isPalindrome(){
+        Node currHead = head;
+        Node reverseHead = null;
+        int counter = 0;
+
+        while (currHead != null){
+            Node newNode = new Node(currHead.data);
+            if (reverseHead == null){
+                reverseHead = newNode;
+                reverseHead.next = null;
+            } else {
+                newNode.next = reverseHead;
+                reverseHead = newNode;
+            }
+            counter ++;
+            currHead = currHead.next;
+        }
+        currHead = head;
+
+        //Only need to check half of the linked list size, since they're reverses.
+        counter = counter / 2;
+        for (int i = 0; i < counter; i++) {
+            if (reverseHead.data != currHead.data)
+                return false;
+            currHead = currHead.next;
+            reverseHead = reverseHead.next;
+        }
+
+        return true;
+    }
+
+    /**
+     * Intersection: Given 2 singly linked lists, determine if the two lists intersect. Return the intersecting node.
+     * Note that the intersection is defined based on reference, not value. That is, if the kth node of the first linked
+     * list is the exact same node (by reference) as the jth node of the second linked list, then they are intersecting.
+     * @param input
+     * @return
+     */
+    public boolean checkIntersection(LinkedList input){
+        Node firstHead = head;
+        Node secondHead = input.head;
+
+        if (this == input)
+            return true;
+
+        return false;
     }
 }
