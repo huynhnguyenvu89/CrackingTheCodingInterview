@@ -1,6 +1,9 @@
 package LinkedList;
 
+import jdk.nashorn.internal.ir.annotations.Ignore;
+
 import java.util.HashMap;
+import java.util.HashSet;
 
 public class LinkedList<T> {
     private Node head;
@@ -345,19 +348,111 @@ public class LinkedList<T> {
     }
 
     /**
-     * Intersection: Given 2 singly linked lists, determine if the two lists intersect. Return the intersecting node.
+     * Intersection: Given 2 singly linked lists, determine if the two lists intersect.
+     * Return the intersecting node's value.
      * Note that the intersection is defined based on reference, not value. That is, if the kth node of the first linked
      * list is the exact same node (by reference) as the jth node of the second linked list, then they are intersecting.
      * @param input
      * @return
      */
-    public boolean checkIntersection(LinkedList input){
+    public T checkIntersection(LinkedList input){
         Node firstHead = head;
         Node secondHead = input.head;
+        HashMap hashMap = new HashMap();
 
-        if (this == input)
-            return true;
+        while (firstHead != null) {
+            hashMap.put(firstHead, true);
+            firstHead = firstHead.next;
+        }
 
-        return false;
+        while (secondHead != null) {
+            if (hashMap.containsKey(secondHead))
+                return (T) secondHead.data;
+            secondHead = secondHead.next;
+        }
+
+        return null;
+    }
+
+    /**
+     * TEST ONLY: Create an intersecting Linked List for testing purpose
+     * Mark as Ignore, not to use anywhere else.
+     *
+     * @see LinkedList#checkIntersection(LinkedList)
+     */
+    @Ignore
+    public void markIntersectingLinkedLists(LinkedList intersectingList){
+        Node curr = head;
+        Node prev = null;
+        while (curr != null) {
+            prev = curr;
+            curr = curr.next;
+        }
+        prev.next = intersectingList.head;
+    }
+
+    /**
+     * Loop Detection: Given a circular linked list, implement an algorithm that returns the node at the beginning of
+     * the loop.
+     * Definition: A circular linked list is a (corrupt) linked list in which a node's next pointer points to an earlier
+     * node, so as to make a loop in the linked list.
+     * Example:
+     * A -> B -> C -> D -> E -> C (the same C as earlier)
+     *
+     * @return
+     */
+    public T loopDetection(Node head){
+        Node corruptedNode = null;
+        Node curr = head;
+        HashMap hashMap = new HashMap();
+        System.out.println("Head node: " + head + "-" + curr);
+
+        while (curr != null) {
+            if (hashMap.containsKey(curr)) {
+                System.out.println("Found corrupting node: " + curr.data);
+                corruptedNode = curr;
+                break;
+            } else {
+                System.out.println("1 Add to map: " + curr);
+                hashMap.put(curr, true);
+                System.out.println("2 Add to map: " + hashMap.containsKey(curr));
+            }
+            curr = curr.next;
+        }
+
+        return corruptedNode == null ? null : (T) corruptedNode.data;
+    }
+
+    /**
+     * TEST ONLY: Create an circular/corrupted Linked List by forcing the tail node of the second LinkedList points to
+     * the tail of the first one. Return a corrupted circular LinkedList.
+     * Mark as Ignore, not to use anywhere else.
+     *
+     * @see LinkedList#loopDetection(Node)
+     */
+    @Ignore
+    public void createCircularLinkedList(LinkedList firstHalf, LinkedList secondHalf){
+        Node firstHead = firstHalf.head;
+        Node firstTail = null;
+        Node secondHead = secondHalf.head;
+        Node secondTail = null;
+
+        while (firstHead != null) {
+            firstTail = firstHead;
+            System.out.println("Adding " + firstTail);
+            add((T) firstTail.data);
+            firstHead = firstHead.next;
+        }
+        while (secondHead != null){
+            secondTail = secondHead;
+            System.out.println("Adding " + secondTail);
+            add((T) secondTail);
+            secondHead = secondHead.next;
+        }
+        secondHead = secondHalf.head;
+        secondTail.next = secondHead;
+        System.out.println("Corrupting " + secondTail + " points to " + secondTail.next + " " + secondTail.next.next);
+
+        System.out.println("LoopDetection: " + head + "-"+ loopDetection(head));
     }
 }

@@ -18,7 +18,8 @@ public class LinkedListTest {
         testReverseLinkedList(false);
         testSumLists(false);
         testPalindromeLinkedList(false);
-        testIntersectionLinkedList(true);
+        testIntersectionLinkedList(false);
+        testLoopDetectionLinkedList(true);
     }
 
     private void testLinkedList(boolean active){
@@ -207,9 +208,20 @@ public class LinkedListTest {
         System.out.println("EqualNonIntersectedLinkedList: " + first.checkIntersection(second));
 
         LinkedList[] intersectedLinkedList = getIntersectedLinkedLists();
-        LinkedList first1 = equalNonIntersectedLinkedList[0];
-        LinkedList second1 = equalNonIntersectedLinkedList[1];
-        System.out.println("IntersectedLinkedList: " + first1.checkIntersection(first1));
+        LinkedList first1 = intersectedLinkedList[0];
+        LinkedList second1 = intersectedLinkedList[1];
+        System.out.println("IntersectedLinkedList: " + first1.checkIntersection(second1));
+    }
+
+    private void testLoopDetectionLinkedList(boolean active) {
+        if (!active)
+            return;
+
+        System.out.println("\nTestLoopDetectionLinkedList");
+        LinkedList corruptedLinkedList = new LinkedList();
+        LinkedList firstHalf = getFirstForwardLinkedList();
+        LinkedList secondHalf = getSecondForwardLinkedList();
+        corruptedLinkedList.createCircularLinkedList(firstHalf, secondHalf);
     }
 
     private LinkedList getTestLinkedList(){
@@ -366,6 +378,7 @@ public class LinkedListTest {
         first.add(9);
         first.add(9);
         res[0] = first;
+        first.print();
 
         LinkedList second = new LinkedList<Integer>();
         second.add(9);
@@ -373,26 +386,35 @@ public class LinkedListTest {
         second.add(9);
         second.add(9);
         res[1] = second;
+        second.print();
 
         return res;
     }
 
     private LinkedList[] getIntersectedLinkedLists(){
         LinkedList[] res = new LinkedList[2];
-
+        LinkedList intersectingLinkedList = new LinkedList();
+        intersectingLinkedList.add(1);
+        intersectingLinkedList.add(2);
+        intersectingLinkedList.add(3);
+;
         LinkedList first = new LinkedList<Integer>();
+        first.add(2);
         first.add(9);
-        first.add(9);
-        first.add(9);
-        first.add(9);
+        first.add(5);
+        first.add(3);
+        first.markIntersectingLinkedLists(intersectingLinkedList);
         res[0] = first;
+        first.print();
 
         LinkedList second = new LinkedList<Integer>();
         second.add(9);
         second.add(9);
         second.add(9);
         second.add(9);
-        res[1] = first;
+        second.markIntersectingLinkedLists(intersectingLinkedList);
+        res[1] = second;
+        second.print();
 
         return res;
     }
