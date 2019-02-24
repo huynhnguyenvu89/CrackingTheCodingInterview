@@ -2,17 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f02a2b32-5801-44f8-b9d9-d7aaf97782ca" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/StackAndQueue/MultiStackInOneArray.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/StackAndQueue/SetOfStacks.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/StackAndQueue/StackMin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CrackingTheCodingInterview/Revision$ArrayList.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CrackingTheCodingInterview/Revision$HashTable$HashNode.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CrackingTheCodingInterview/Revision$HashTable.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CrackingTheCodingInterview/Revision$StringBuilder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CrackingTheCodingInterview/Revision.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CrackingTheCodingInterview/test/StackAndQueueTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CrackingTheCodingInterview/test/StackAndQueueTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/StackAndQueue/StackThreeInOne.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/StackAndQueue/SetOfStacks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/StackAndQueue/SetOfStacks.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/StackAndQueueTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/StackAndQueueTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -28,8 +18,8 @@
       <file leaf-file-name="StackAndQueueTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/StackAndQueueTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="58">
-              <caret line="15" selection-start-line="15" selection-end-line="15" />
+            <state relative-caret-position="228">
+              <caret line="39" selection-start-line="39" selection-end-line="39" />
               <folding>
                 <element signature="e#2328#2329#0" expanded="true" />
                 <element signature="e#2358#2359#0" expanded="true" />
@@ -41,8 +31,18 @@
       <file leaf-file-name="SetOfStacks.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/StackAndQueue/SetOfStacks.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="24" selection-start-line="2" selection-start-column="24" selection-end-line="2" selection-end-column="24" />
+            <state relative-caret-position="149">
+              <caret line="33" column="19" selection-start-line="33" selection-start-column="19" selection-end-line="33" selection-end-column="19" />
+              <folding>
+                <element signature="e#226#227#0" expanded="true" />
+                <element signature="e#266#267#0" expanded="true" />
+                <element signature="e#737#738#0" expanded="true" />
+                <element signature="e#773#774#0" expanded="true" />
+                <element signature="e#1510#1511#0" expanded="true" />
+                <element signature="e#1557#1558#0" expanded="true" />
+                <element signature="e#1596#1597#0" expanded="true" />
+                <element signature="e#1636#1637#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -136,6 +136,7 @@
         <option value="$PROJECT_DIR$/src/StackAndQueue/MultiStackInOneArray.java" />
         <option value="$PROJECT_DIR$/src/StackAndQueue/StackMin.java" />
         <option value="$PROJECT_DIR$/src/test/StackAndQueueTest.java" />
+        <option value="$PROJECT_DIR$/src/StackAndQueue/SetOfStacks.java" />
       </list>
     </option>
   </component>
@@ -284,12 +285,12 @@
       <window_info anchor="right" id="Capture Analysis" order="0" />
       <window_info anchor="bottom" id="Event Log" order="1" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" order="3" />
-      <window_info anchor="bottom" id="Run" order="6" visible="true" weight="0.4720169" />
+      <window_info active="true" anchor="bottom" id="Run" order="6" visible="true" weight="0.4720169" />
       <window_info anchor="bottom" id="Version Control" order="2" />
       <window_info anchor="bottom" id="Terminal" order="0" />
       <window_info id="Capture Tool" order="3" />
       <window_info id="Designer" order="0" />
-      <window_info active="true" content_ui="combo" id="Project" order="6" visible="true" weight="0.19739583" />
+      <window_info content_ui="combo" id="Project" order="6" visible="true" weight="0.19739583" />
       <window_info anchor="bottom" id="Find" order="5" weight="0.32946146" />
       <window_info id="Learn" order="2" />
       <window_info id="Structure" order="7" side_tool="true" weight="0.25" />
@@ -465,8 +466,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/StackAndQueueTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="58">
-          <caret line="15" selection-start-line="15" selection-end-line="15" />
+        <state relative-caret-position="228">
+          <caret line="39" selection-start-line="39" selection-end-line="39" />
           <folding>
             <element signature="e#2328#2329#0" expanded="true" />
             <element signature="e#2358#2359#0" expanded="true" />
@@ -476,8 +477,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/StackAndQueue/SetOfStacks.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="24" selection-start-line="2" selection-start-column="24" selection-end-line="2" selection-end-column="24" />
+        <state relative-caret-position="149">
+          <caret line="33" column="19" selection-start-line="33" selection-start-column="19" selection-end-line="33" selection-end-column="19" />
+          <folding>
+            <element signature="e#226#227#0" expanded="true" />
+            <element signature="e#266#267#0" expanded="true" />
+            <element signature="e#737#738#0" expanded="true" />
+            <element signature="e#773#774#0" expanded="true" />
+            <element signature="e#1510#1511#0" expanded="true" />
+            <element signature="e#1557#1558#0" expanded="true" />
+            <element signature="e#1596#1597#0" expanded="true" />
+            <element signature="e#1636#1637#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

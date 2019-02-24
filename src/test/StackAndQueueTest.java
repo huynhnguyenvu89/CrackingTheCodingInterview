@@ -13,7 +13,34 @@ public class StackAndQueueTest<T> {
         testQueue(false);
         testStackThreeInOne(false);
         testStackMin(false);
+        testSetOfStack(true);
+    }
 
+    private void testSetOfStack(boolean active) {
+        if (!active)
+            return;
+
+        SetOfStacks setOfStacks = new SetOfStacks(2);
+        setOfStacks.push(1);
+        setOfStacks.push(2);
+        setOfStacks.push(3);
+        setOfStacks.push(4);
+        setOfStacks.push(6);
+        setOfStacks.print();
+
+        try {
+            setOfStacks.pop();
+            setOfStacks.print();
+            setOfStacks.pop();
+            setOfStacks.pop();
+            setOfStacks.print();
+            setOfStacks.pop();
+            setOfStacks.pop();
+            setOfStacks.print();
+
+        } catch (IndexOutOfBoundsException e) {
+            log("" + e.toString());
+        }
     }
 
     private void testStackMin(boolean active) {
