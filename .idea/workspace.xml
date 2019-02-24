@@ -2,27 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f02a2b32-5801-44f8-b9d9-d7aaf97782ca" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/StackAndQueue/Queue.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/StackAndQueue/Stack.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/StackAndQueue/StackArray.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/StackAndQueue/StackThreeInOne.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/MyLog.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/StackAndQueueTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/VPractive.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utility/MyLog.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utility/VPractive.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/StackAndQueue/MultiStackInOneArray.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/StackAndQueue/SetOfStacks.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/StackAndQueue/StackMin.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CrackingTheCodingInterview.iml" beforeDir="false" afterPath="$PROJECT_DIR$/CrackingTheCodingInterview.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CrackingTheCodingInterview/META-INF/CrackingTheCodingInterview.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CrackingTheCodingInterview/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CrackingTheCodingInterview/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CrackingTheCodingInterview/test/LinkedListTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CrackingTheCodingInterview/test/LinkedListTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Revision.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/utility/Revision.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/LinkedListTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/LinkedListTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CrackingTheCodingInterview/Revision$ArrayList.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CrackingTheCodingInterview/Revision$HashTable$HashNode.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CrackingTheCodingInterview/Revision$HashTable.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CrackingTheCodingInterview/Revision$StringBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CrackingTheCodingInterview/Revision.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CrackingTheCodingInterview/test/StackAndQueueTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CrackingTheCodingInterview/test/StackAndQueueTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/StackAndQueue/StackThreeInOne.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/StackAndQueueTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/StackAndQueueTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -33,28 +24,63 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="StackAndQueueTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/StackAndQueueTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="32" lean-forward="true" selection-start-line="7" selection-start-column="32" selection-end-line="7" selection-end-column="32" />
+            <state relative-caret-position="58">
+              <caret line="15" selection-start-line="15" selection-end-line="15" />
               <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#294#295#0" expanded="true" />
-                <element signature="e#324#325#0" expanded="true" />
+                <element signature="e#2328#2329#0" expanded="true" />
+                <element signature="e#2358#2359#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="StackThreeInOne.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/StackAndQueue/StackThreeInOne.java">
+      <file leaf-file-name="SetOfStacks.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/StackAndQueue/SetOfStacks.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="305">
-              <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+            <state relative-caret-position="34">
+              <caret line="2" column="24" selection-start-line="2" selection-start-column="24" selection-end-line="2" selection-end-column="24" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="StackMin.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/StackAndQueue/StackMin.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="340">
+              <caret line="39" column="22" lean-forward="true" selection-start-line="39" selection-start-column="22" selection-end-line="39" selection-end-column="22" />
+              <folding>
+                <element signature="e#174#175#0" expanded="true" />
+                <element signature="e#209#210#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Stack.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/StackAndQueue/Stack.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="306">
+              <caret line="29" column="18" selection-start-line="29" selection-start-column="18" selection-end-line="29" selection-end-column="18" />
               <folding>
                 <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MultiStackInOneArray.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/StackAndQueue/MultiStackInOneArray.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="353">
+              <caret line="101" column="5" lean-forward="true" selection-start-line="101" selection-start-column="5" selection-end-line="101" selection-end-column="5" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1103#1104#0" expanded="true" />
+                <element signature="e#1150#1151#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -64,7 +90,7 @@
         <entry file="file://$PROJECT_DIR$/src/test/MyLog.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="102">
-              <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+              <caret line="10" selection-start-line="10" selection-end-line="10" />
             </state>
           </provider>
         </entry>
@@ -105,24 +131,25 @@
         <option value="$PROJECT_DIR$/src/StackAndQueue/Stack.java" />
         <option value="$PROJECT_DIR$/src/StackAndQueue/Queue.java" />
         <option value="$PROJECT_DIR$/src/utility/MyLog.java" />
-        <option value="$PROJECT_DIR$/src/test/StackAndQueueTest.java" />
+        <option value="$PROJECT_DIR$/src/StackAndQueue/StackInfo.java" />
         <option value="$PROJECT_DIR$/src/StackAndQueue/StackThreeInOne.java" />
+        <option value="$PROJECT_DIR$/src/StackAndQueue/MultiStackInOneArray.java" />
+        <option value="$PROJECT_DIR$/src/StackAndQueue/StackMin.java" />
+        <option value="$PROJECT_DIR$/src/test/StackAndQueueTest.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-1206" />
-    <option name="y" value="358" />
-    <option name="width" value="1266" />
-    <option name="height" value="860" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1936" />
+    <option name="height" value="1056" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -157,7 +184,9 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="AndroidView" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="RecentsManager">
@@ -244,7 +273,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1608" y="350" width="1616" height="876" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="4" />
@@ -255,23 +284,23 @@
       <window_info anchor="right" id="Capture Analysis" order="0" />
       <window_info anchor="bottom" id="Event Log" order="1" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" order="3" />
+      <window_info anchor="bottom" id="Run" order="6" visible="true" weight="0.4720169" />
       <window_info anchor="bottom" id="Version Control" order="2" />
-      <window_info anchor="bottom" id="Run" order="6" visible="true" weight="0.40286833" />
       <window_info anchor="bottom" id="Terminal" order="0" />
       <window_info id="Capture Tool" order="3" />
       <window_info id="Designer" order="0" />
-      <window_info active="true" content_ui="combo" id="Project" order="6" visible="true" weight="0.1975" />
+      <window_info active="true" content_ui="combo" id="Project" order="6" visible="true" weight="0.19739583" />
+      <window_info anchor="bottom" id="Find" order="5" weight="0.32946146" />
       <window_info id="Learn" order="2" />
       <window_info id="Structure" order="7" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="6" weight="0.25" />
       <window_info id="UI Designer" order="1" />
       <window_info anchor="right" id="Theme Preview" order="2" />
-      <window_info id="Favorites" order="4" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="7" weight="0.4" />
-      <window_info anchor="bottom" id="Find" order="5" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="5" type="SLIDING" weight="0.4" />
-      <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
+      <window_info id="Favorites" order="4" side_tool="true" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="7" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="5" type="SLIDING" weight="0.4" />
       <window_info anchor="bottom" id="Message" order="4" />
       <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
     </layout>
@@ -280,13 +309,44 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/Logger.java">
+    <entry file="file://$PROJECT_DIR$/src/test/StackAndQueueTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="16" selection-start-column="13" selection-end-column="19" />
+        <state relative-caret-position="85">
+          <caret line="7" column="32" selection-start-line="7" selection-start-column="32" selection-end-line="7" selection-end-column="32" />
+          <folding>
+            <element signature="e#2328#2329#0" expanded="true" />
+            <element signature="e#2358#2359#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/MyLog.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/VPractive.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/StackAndQueue/MultiStackInOneArray.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="7" column="57" selection-start-line="7" selection-start-column="57" selection-end-line="7" selection-end-column="57" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1103#1104#0" expanded="true" />
+            <element signature="e#1150#1151#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Logger.java" />
     <entry file="file://$PROJECT_DIR$/src/test/LinkedListTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
@@ -335,16 +395,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/StackAndQueue/Stack.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="52" lean-forward="true" selection-start-line="52" selection-end-line="52" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/utility/VPractive.java">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -363,18 +413,6 @@
     <entry file="file://$PROJECT_DIR$/src/utility/MyLog.java">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/StackAndQueueTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="32" lean-forward="true" selection-start-line="7" selection-start-column="32" selection-end-line="7" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#294#295#0" expanded="true" />
-            <element signature="e#324#325#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/VPractive.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
@@ -385,17 +423,61 @@
     <entry file="file://$PROJECT_DIR$/src/test/MyLog.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
-          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/StackAndQueue/StackThreeInOne.java">
+    <entry file="file://$PROJECT_DIR$/src/StackAndQueue/StackInfo.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/StackAndQueue/MultiStackInOneArray.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="305">
-          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+        <state relative-caret-position="353">
+          <caret line="101" column="5" lean-forward="true" selection-start-line="101" selection-start-column="5" selection-end-line="101" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1103#1104#0" expanded="true" />
+            <element signature="e#1150#1151#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/StackAndQueue/Stack.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="29" column="18" selection-start-line="29" selection-start-column="18" selection-end-line="29" selection-end-column="18" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/StackAndQueue/StackMin.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="39" column="22" lean-forward="true" selection-start-line="39" selection-start-column="22" selection-end-line="39" selection-end-column="22" />
+          <folding>
+            <element signature="e#174#175#0" expanded="true" />
+            <element signature="e#209#210#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/StackAndQueueTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="58">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
+          <folding>
+            <element signature="e#2328#2329#0" expanded="true" />
+            <element signature="e#2358#2359#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/StackAndQueue/SetOfStacks.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="24" selection-start-line="2" selection-start-column="24" selection-end-line="2" selection-end-column="24" />
         </state>
       </provider>
     </entry>

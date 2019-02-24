@@ -1,8 +1,6 @@
 package test;
 
-import StackAndQueue.Queue;
-import StackAndQueue.Stack;
-import StackAndQueue.StackArray;
+import StackAndQueue.*;
 
 public class StackAndQueueTest<T> {
     public StackAndQueueTest(){}
@@ -13,6 +11,61 @@ public class StackAndQueueTest<T> {
         testStackImplementationUsingArray(false);
         testStackImplementationUsingLinkedList(false);
         testQueue(false);
+        testStackThreeInOne(false);
+        testStackMin(false);
+
+    }
+
+    private void testStackMin(boolean active) {
+        if (!active)
+            return;
+
+        StackMin stackMin = new StackMin();
+        stackMin.push(3);
+        stackMin.push(4);
+        stackMin.push(7);
+        stackMin.push(1);
+
+        log("Stack min value " + stackMin.min());
+        stackMin.pop();
+        stackMin.print();
+        log("Stack min value " + stackMin.min());
+        stackMin.pop();
+        stackMin.pop();
+        stackMin.print();
+        log("Stack min value " + stackMin.min());
+        stackMin.pop();
+    }
+
+    private void testStackThreeInOne(boolean active){
+        if (!active)
+            return;
+        MultiStackInOneArray multiStackInOneArray = new MultiStackInOneArray(Integer.class, 3, 2, 5);
+
+        try {
+            log("Check first stack empty " + multiStackInOneArray.isEmpty(0));
+            log("Check second stack empty " + multiStackInOneArray.isEmpty(1));
+            log("Check third stack empty " + multiStackInOneArray.isEmpty(2));
+            log("Check stack -1 empty " + multiStackInOneArray.isEmpty(-1));
+        } catch (Exception e) {
+            log("Intended exception " + e.toString());
+        }
+
+        try {
+            multiStackInOneArray.pushToStack(1, 1);
+            multiStackInOneArray.pushToStack(2, 1);
+            multiStackInOneArray.pushToStack(3, 1);
+        } catch (Exception e) {
+            log("Intended exception " + e.toString());
+        }
+
+        try {
+            log("Pop " + multiStackInOneArray.popFromStack(1));
+            log("Pop " + multiStackInOneArray.popFromStack(1));
+            log("Pop " + multiStackInOneArray.popFromStack(1));
+        } catch (Exception e) {
+            log("Intended exception " + e.toString());
+        }
     }
 
     private void testQueue(boolean active) {
