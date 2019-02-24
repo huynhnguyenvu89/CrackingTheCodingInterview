@@ -19,7 +19,7 @@ public class LinkedListTest {
         testSumLists(false);
         testPalindromeLinkedList(false);
         testIntersectionLinkedList(false);
-        testLoopDetectionLinkedList(true);
+        testLoopDetectionLinkedList(false);
     }
 
     private void testLinkedList(boolean active){

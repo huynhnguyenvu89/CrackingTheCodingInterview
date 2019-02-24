@@ -1,5 +1,6 @@
 import test.ArraysStringsTest;
 import test.LinkedListTest;
+import test.StackAndQueueTest;
 
 public class Main {
     public static void main(String[] args) {
@@ -10,6 +11,9 @@ public class Main {
 
         //Run LinkedList tests suite
         LinkedListTest linkedListTest = new LinkedListTest();
-        linkedListTest.runTestSuite(true);
+        linkedListTest.runTestSuite(false);
+
+        StackAndQueueTest stackAndQueueTest = new StackAndQueueTest();
+        stackAndQueueTest.runTestSuite(true);
     }
 }
