@@ -13,7 +13,53 @@ public class StackAndQueueTest<T> {
         testQueue(false);
         testStackThreeInOne(false);
         testStackMin(false);
-        testSetOfStack(true);
+        testSetOfStack(false);
+        testMyQueue(false);
+        testSortStack(false);
+        testAnimalShelter(true);
+    }
+
+    private void testAnimalShelter(boolean active){
+        if (!active)
+            return;
+        AnimalShelter animalShelter = new AnimalShelter();
+        animalShelter.enqueue(AnimalShelter.CAT_TYPE_ID, "Happy");
+        animalShelter.enqueue(AnimalShelter.CAT_TYPE_ID, "Na");
+        animalShelter.enqueue(AnimalShelter.DOG_TYPE_ID, "Steve");
+        animalShelter.enqueue(AnimalShelter.DOG_TYPE_ID, "Faisal");
+        animalShelter.enqueue(AnimalShelter.DOG_TYPE_ID, "Vu");
+        animalShelter.enqueue(AnimalShelter.CAT_TYPE_ID, "Pill");
+        animalShelter.enqueue(AnimalShelter.DOG_TYPE_ID, "Woof");
+
+        log("dequeueCat " + animalShelter.dequeueCat());
+        log("dequeueDog " + animalShelter.dequeueDog());
+        log("dequeueAny " + animalShelter.dequeueAny());
+    }
+
+    private void testSortStack(boolean active){
+        if (!active)
+            return;
+
+
+    }
+
+    private void testMyQueue(boolean active) {
+        if (!active)
+            return;
+        MyQueue myQueue = new MyQueue();
+        myQueue.add(1);
+        myQueue.add(2);
+        myQueue.add(3);
+        myQueue.add(4);
+        myQueue.add(5);
+        myQueue.print();
+        myQueue.remove();
+        myQueue.print();
+        myQueue.remove();
+        myQueue.remove();
+        myQueue.remove();
+        myQueue.remove();
+        myQueue.print();
     }
 
     private void testSetOfStack(boolean active) {

@@ -16,7 +16,7 @@ public class StackMin extends VPractive {
         if (head == null) {
             head = new Node(element, element);
         } else {
-            Node newNode = null;
+            Node newNode;
             int currentSubStackMin = head.subStackMin;
             if (currentSubStackMin <= element) {
                 newNode = new Node(element, currentSubStackMin);
