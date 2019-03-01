@@ -1,6 +1,7 @@
 import test.ArraysStringsTest;
 import test.LinkedListTest;
 import test.StackAndQueueTest;
+import test.TreeAndGraphTest;
 
 public class Main {
     public static void main(String[] args) {
@@ -14,6 +15,9 @@ public class Main {
         linkedListTest.runTestSuite(false);
 
         StackAndQueueTest stackAndQueueTest = new StackAndQueueTest();
-        stackAndQueueTest.runTestSuite(true);
+        stackAndQueueTest.runTestSuite(false);
+
+        TreeAndGraphTest treeAndGraphTest = new TreeAndGraphTest();
+        treeAndGraphTest.runTestSuite(true);
     }
 }
