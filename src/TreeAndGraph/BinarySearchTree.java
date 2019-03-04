@@ -41,19 +41,40 @@ public class BinarySearchTree extends VPractive {
         }
     }
 
-    public boolean remove(int data){
-        log("Deleting " + data + " from BST");
-        print();
-
-        print();
-        return false;
+    public void remove(int data){
+        remove(root, data);
     }
 
-    private void remove(Node root, int data){
+    private Node remove(Node root, int data){
         if (root == null){
-            return;
+            log("Root is null");
+        } else if (data < root.data){
+            root.left = remove(root.left, data);
+        } else if (data > root.data){
+            root.right = remove(root.right, data);
+        } else {
+            //Case 1: If there is no subtree
+            if (root.right == null && root.left == null){
+                root = null;
+            }
+            //Case 2: If there is only 1 subtree
+            else if (root.right == null) {
+                root = root.left;
+            } else if (root.left == null){
+                root = root.right;
+            }
+            //Case 3: If there are 2 subtrees
+            else {
+                //Find the minimum value in its right sub tree
+                Node minSubTree = findMin(root.right);
+                //Replace root data with the min value
+                root.data = minSubTree.data;
+                //Recursively delete the min node from the right sub-tree
+                root.right = remove(root.right, minSubTree.data);
+            }
         }
 
+        return root;
     }
 
     public int findMinIteratively(){
@@ -71,6 +92,14 @@ public class BinarySearchTree extends VPractive {
 
     public int findMinRecursively(){
         return findMinRecursively(root);
+    }
+
+    private Node findMin(Node root){
+        if (root == null)
+            return null;
+        if (root.left == null)
+            return root;
+        return findMin(root.left);
     }
 
     private int findMinRecursively(Node root){
