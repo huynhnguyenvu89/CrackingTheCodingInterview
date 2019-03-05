@@ -16,7 +16,21 @@ public class TreeAndGraphTest extends VPractive{
         testMinimalTree(false);
         testRouteBetweenNodes(false);
         testListOfDepth(false);
-        testCheckBalanced(true);
+        testCheckBalanced(false);
+        testTreeAndGraphRevision(true);
+    }
+
+    private void testTreeAndGraphRevision(boolean active){
+        if (!active)
+            return;
+        TreeAndGraphRevision revision = new TreeAndGraphRevision();
+        revision.testBSTImplementation();
+        revision.testFindHeightBinaryTree();
+        revision.testMinimalTree();
+        revision.testGraph();
+        revision.testRouteBetweenNode();
+        revision.testListOfDepth();
+        revision.testTreeBalanced();
     }
 
     private void testCheckBalanced(boolean active){
